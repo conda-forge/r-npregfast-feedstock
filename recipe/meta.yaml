@@ -1,4 +1,4 @@
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/npregfast_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/npregfast/npregfast_{{ version }}.tar.gz
-  sha256: 65c9295e21534eeaf2c3e460eee5d6ec1a29f0662bed425dcf06288ef11057b4
+  sha256: 3a937cdbd241a9b5b6b96a9bceec225a851db920b634a028314e86afa95facaf
 
 build:
-  number: 4
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
